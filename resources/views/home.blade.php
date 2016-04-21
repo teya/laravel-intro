@@ -1,8 +1,6 @@
 @extends('layouts.master')
-
 @section('content')
 	<div class="centered">
-
 		@foreach($actions as $action)
 			<a href="{{ route('niceaction', ['action' => lcfirst($action->name)]) }}">{{ $action->name }}</a>
 		@endforeach
